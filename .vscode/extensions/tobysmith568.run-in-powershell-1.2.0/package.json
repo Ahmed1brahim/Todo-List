@@ -1,0 +1,137 @@
+{
+	"name": "run-in-powershell",
+	"displayName": "Run in Powershell",
+	"description": "Runs scripts in a new Powershell terminal outside of VS Code.",
+	"publisher": "tobysmith568",
+	"version": "1.2.0",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tobysmith568/run-in-powershell"
+	},
+	"prettier": "@tobysmith568/prettier-config",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"powershell",
+		"pwsh",
+		"external",
+		"terminal",
+		"core",
+		"admin"
+	],
+	"activationEvents": [
+		"onCommand:run-in-powershell.runInPS",
+		"onCommand:run-in-powershell.runInPSAdmin"
+	],
+	"main": "./dist/extension.js",
+	"icon": "icons/logo.png",
+	"contributes": {
+		"configuration": {
+			"title": "Run in Powershell",
+			"properties": {
+				"runInPowerShell.PowershellCoreLocation": {
+					"type": "string",
+					"default": "",
+					"description": "To use Powershell Core, enter the location of it's executable. Leave it empty to use Powershell 5 (if it's available on your machine)."
+				},
+				"runInPowerShell.CloseWhenFinished": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable this if you want the external terminal to close when it's finished running the file."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "run-in-powershell.runInPS",
+				"title": "Run In Powershell Externally",
+				"icon": {
+					"light": "./icons/ps.svg",
+					"dark": "./icons/ps-inverted.svg"
+				}
+			},
+			{
+				"command": "run-in-powershell.runInPSAdmin",
+				"title": "Run In Powershell Externally (Admin)",
+				"icon": {
+					"light": "./icons/shield.svg",
+					"dark": "./icons/shield-inverted.svg"
+				}
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "run-in-powershell.runInPS",
+					"group": "1_powershell",
+					"when": "resourceExtname == .ps1"
+				},
+				{
+					"command": "run-in-powershell.runInPSAdmin",
+					"group": "1_powershell",
+					"when": "resourceExtname == .ps1"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "run-in-powershell.runInPS",
+					"when": "resourceExtname == .ps1",
+					"group": "navigation"
+				},
+				{
+					"command": "run-in-powershell.runInPSAdmin",
+					"when": "resourceExtname == .ps1",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"lint": "eslint src --ext ts --max-warnings 0",
+		"watch": "webpack --watch",
+		"pretest": "npm run compile-tests && npm run compile",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"test": "node ./out/test/runTest.js",
+		"watch-tests": "tsc -p . -w --outDir out"
+	},
+	"devDependencies": {
+		"@license-cop/permissive": "^1.1.0",
+		"@tobysmith568/prettier-config": "^2.0.0",
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "18.x",
+		"@types/vscode": "^1.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"@vscode/test-electron": "^2.3.0",
+		"cspell": "^6.31.1",
+		"eslint": "^8.39.0",
+		"glob": "^10.0.0",
+		"license-cop": "^1.1.0",
+		"mocha": "^10.2.0",
+		"ts-loader": "^9.4.2",
+		"typescript": "^5.0.4",
+		"vsce": "^2.15.0",
+		"webpack": "^5.81.0",
+		"webpack-cli": "^5.0.2"
+	},
+	"__metadata": {
+		"id": "67a4bbbe-50a6-4822-8c92-a728b57a13b3",
+		"publisherId": "e03d224a-0c16-41f6-a016-167dae780b77",
+		"publisherDisplayName": "Toby Smith",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1704042729187,
+		"pinned": false,
+		"preRelease": false
+	}
+}

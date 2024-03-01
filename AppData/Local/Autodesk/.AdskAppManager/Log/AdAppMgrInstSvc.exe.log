@@ -1,0 +1,35 @@
+﻿ INFO 2023-03-18T16:58:11.673 TID(11396) ================== AdAppMgrInstSvc started (WINGMAN:DESKTOP-MJTD976-ahmed) ==================
+TRACE 2023-03-18T16:58:11.674 TID(11396) AdAppMgrIPCClient::onConnected: AdAppMgrRequestServer
+TRACE 2023-03-18T16:58:11.674 TID(11396) AdAppMgrIPCClient::connectToServer: succeeded
+DEBUG 2023-03-18T16:58:11.674 TID(15556) AdAppMgrIPCServer::start: create named pipe ADAPPMGRINSTSRVIN
+DEBUG 2023-03-18T16:58:11.674 TID(11032) AdAppMgrIPCServer::start: create named pipe ADAPPMGRINSTSRVOUT
+DEBUG 2023-03-18T16:58:11.675 TID(15556) AdAppMgrIPCServer::start: listen to named pipe ADAPPMGRINSTSRVIN
+DEBUG 2023-03-18T16:58:11.675 TID(11032) AdAppMgrIPCServer::start: listen to named pipe ADAPPMGRINSTSRVOUT
+DEBUG 2023-03-18T16:58:11.679 TID(11396) AdAppMgrIPCClient::onSend(WINGMAN:DESKTOP-MJTD976-ahmed): {"_APPID":"WINGMAN","_PROTOCOL":"ADAPPMGRSVC_1","_REQUEST":"INSTALLNEXT","_USERID":"DESKTOP-MJTD976-ahmed","_VERSION":"1.0"}
+DEBUG 2023-03-18T16:58:11.692 TID(11396) AdAppMgrIPCClient::onSend(response): {"CONFIGURABLE":false,"CONTENTPATH":"C:\\ProgramData\\Autodesk","ID":"C213BF52-89D4-4810-90F6-DE38BC518A2F","INSTALLFILE":"C:\\Users\\ahmed\\Downloads\\C213BF52-89D4-4810-90F6-DE38BC518A2F\\AutoCAD_2018_Combo_Security_Hotfix_x64.exe","INSTALLPATH":"C:\\Program Files\\Autodesk","INSTALLTYPE":"InstallAny","LANGUAGE":"en_US","OPTIONS":"","PROXYINFO":{"_PROXYHOSTNAME":"","_PROXYPASSWORD":"","_PROXYPORT":0,"_PROXYTYPE":0,"_PROXYUSERNAME":""},"SUCCESSCODE":0,"Status":"SUCCESS","UPDATEPATH":"C:\\\\Users\\\\ahmed\\\\Downloads","_APPID":"WINGMAN","_PROTOCOL":"ADAPPMGRSVC_1","_REQUEST":"INSTALLNEXT","_USERID":"DESKTOP-MJTD976-ahmed","_VERSION":"1.0"}
+DEBUG 2023-03-18T16:58:11.692 TID(14444) AdAppMgrSetupInt::installNext: id(C213BF52-89D4-4810-90F6-DE38BC518A2F), _installFile(C:\Users\ahmed\Downloads\C213BF52-89D4-4810-90F6-DE38BC518A2F\AutoCAD_2018_Combo_Security_Hotfix_x64.exe), _installOptions(), _installOptionsII()
+DEBUG 2023-03-18T16:58:11.692 TID(14444) AdAppMgrSetupInt::verifyProxyCredentials: proxy type(0), host(), port(0), user()
+TRACE 2023-03-18T16:58:11.707 TID(14444) AdAppMgrSetupInt::installUpdate
+DEBUG 2023-03-18T16:58:11.825 TID(14444) The file "C:\Users\ahmed\Downloads\C213BF52-89D4-4810-90F6-DE38BC518A2F\AutoCAD_2018_Combo_Security_Hotfix_x64.exe" is signed.
+DEBUG 2023-03-18T16:58:11.825 TID(14444) CertFindCertificateInStore succeeded
+ INFO 2023-03-18T16:58:11.826 TID(14444) "C:\Users\ahmed\Downloads\C213BF52-89D4-4810-90F6-DE38BC518A2F\AutoCAD_2018_Combo_Security_Hotfix_x64.exe"  /lang en-US /ServerName ADAPPMGRINSTSRV2 /AssetId C213BF52-89D4-4810-90F6-DE38BC518A2F
+DEBUG 2023-03-18T16:58:11.827 TID(14444) AdAppMgrSetupInt::installUpdate: "C:\Users\ahmed\Downloads\C213BF52-89D4-4810-90F6-DE38BC518A2F\AutoCAD_2018_Combo_Security_Hotfix_x64.exe"  /lang en-US /ServerName ADAPPMGRINSTSRV2 /AssetId C213BF52-89D4-4810-90F6-DE38BC518A2F
+DEBUG 2023-03-18T16:59:43.002 TID(14444) AdAppMgrSetupInt::installUpdate: ASP return code: 2147945410, converted error code: 3010
+ERROR 2023-03-18T16:59:43.003 TID(14444) AdAppMgrSetupInt::installUpdateFinished: installUpdate failed: program=C:\Users\ahmed\Downloads\C213BF52-89D4-4810-90F6-DE38BC518A2F\AutoCAD_2018_Combo_Security_Hotfix_x64.exe error=3010
+DEBUG 2023-03-18T16:59:43.003 TID(11396) AdAppMgrIPCClient::onSend(WINGMAN:DESKTOP-MJTD976-ahmed): {"EXITCODE":"3010","ID":"C213BF52-89D4-4810-90F6-DE38BC518A2F","_APPID":"WINGMAN","_PROTOCOL":"ADAPPMGRSVC_1","_REQUEST":"INSTALLNEXT","_USERID":"DESKTOP-MJTD976-ahmed","_VERSION":"1.0"}
+DEBUG 2023-03-18T16:59:43.016 TID(11396) AdAppMgrIPCClient::onSend(response): {"Status":"COMPLETED","_REQUEST":"INSTALLNEXT"}
+ INFO 2023-03-18T16:59:43.016 TID(14444) AdAppMgrSetupInt::installNext: no more install request
+ERROR 2023-03-18T16:59:43.017 TID(14444) AdAppMgrIPCServer::getSocket: client ID (WINGMAN:DESKTOP-MJTD976-ahmed), socket is not available
+ERROR 2023-03-18T16:59:43.017 TID(14444) AdAppMgrIPCServer::post: failed to send message due to unavailable socket: {"_APPID":"ADAPPMGRINSTSVC","_EXITCODE":"3010","_NOTIFICATION":"SETUP_EXITCODE","_USERID":"DESKTOP-MJTD976-ahmed"}
+TRACE 2023-03-18T16:59:43.017 TID(14444) AdAppMgrSetupInt::onFinished
+ INFO 2023-03-18T16:59:43.017 TID(14444) AdAppMgrSetupInt::onFinished: _setup not initialized
+ INFO 2023-03-18T16:59:43.018 TID(14444) AdAppMgrSetupInt::onFinished: _setupThread not initialized
+TRACE 2023-03-18T16:59:43.018 TID(14444) AdAppMgrSetupInt::onFinished: stop IPC manager
+TRACE 2023-03-18T16:59:43.018 TID(15556) AdAppMgrIPCServer::closing ADAPPMGRINSTSRVIN
+TRACE 2023-03-18T16:59:43.018 TID(11396) AdAppMgrIPCClient::onDisconnected: AdAppMgrRequestServer
+TRACE 2023-03-18T16:59:43.018 TID(11032) AdAppMgrIPCServer::closing ADAPPMGRINSTSRVOUT
+TRACE 2023-03-18T16:59:43.019 TID(15556) AdAppMgrIPCServer::close: delete QLocalServer instance
+TRACE 2023-03-18T16:59:43.019 TID(11032) AdAppMgrIPCServer::close: delete QLocalServer instance
+ INFO 2023-03-18T16:59:43.020 TID(11396) ================== AdAppMgrInstSvc exited (0) ==================
+TRACE 2023-03-18T16:59:43.020 TID(11396) AdAppMgrIPCServer::closing ADAPPMGRINSTSRVOUT
+TRACE 2023-03-18T16:59:43.020 TID(11396) AdAppMgrIPCServer::closing ADAPPMGRINSTSRVIN

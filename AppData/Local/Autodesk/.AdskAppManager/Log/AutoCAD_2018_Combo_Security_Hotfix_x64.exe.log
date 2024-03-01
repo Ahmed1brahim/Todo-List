@@ -1,0 +1,20 @@
+﻿TRACE 2023-03-18T16:58:12.823 TID(6052) ================== AdskWixBaInt started (WINGMAN:DESKTOP-MJTD976-ahmed) ==================
+TRACE 2023-03-18T16:58:12.824 TID(6052) AdAppMgrIPCClient::connectToServer: succeeded
+TRACE 2023-03-18T16:58:12.825 TID(9928) AdAppMgrIPCClient::onConnected: AdAppMgrRequestServer
+DEBUG 2023-03-18T16:58:12.825 TID(11476) AdAppMgrIPCServer::start: create named pipe ADAPPMGRINSTSRV2IN
+DEBUG 2023-03-18T16:58:12.825 TID(1528) AdAppMgrIPCServer::start: create named pipe ADAPPMGRINSTSRV2OUT
+DEBUG 2023-03-18T16:58:12.825 TID(11476) AdAppMgrIPCServer::start: listen to named pipe ADAPPMGRINSTSRV2IN
+DEBUG 2023-03-18T16:58:12.825 TID(1528) AdAppMgrIPCServer::start: listen to named pipe ADAPPMGRINSTSRV2OUT
+TRACE 2023-03-18T16:58:14.831 TID(1528) AdAppMgrIPCServer::onNewConnection: ADAPPMGRINSTSRV2OUT
+TRACE 2023-03-18T16:58:14.831 TID(11476) AdAppMgrIPCServer::onNewConnection: ADAPPMGRINSTSRV2IN
+TRACE 2023-03-18T16:58:14.831 TID(1528) AdAppMgrIPCServer::onReadyRead: AppID=WINGMAN, UserID=DESKTOP-MJTD976-ahmed, serverName=ADAPPMGRINSTSRV2OUT
+ERROR 2023-03-18T16:58:19.825 TID(9928) AdAppMgrIPCClient::onSend: failed to parse: 
+DEBUG 2023-03-18T16:59:42.952 TID(9928) AdAppMgrIPCClient::onReadyRead: {"ID":"C213BF52-89D4-4810-90F6-DE38BC518A2F","ProgressUpdate":1,"Server":"ADAPPMGRINSTSRV2","Signal":"InstallServiceStarted","Status":"SUCCESS","_APPID":"WINGMAN","_PROTOCOL":"ADAPPMGRSVC_1","_REQUEST":"SERVICESTARTED","_USERID":"DESKTOP-MJTD976-ahmed","_VERSION":"1.0"}
+TRACE 2023-03-18T16:59:42.956 TID(9928) AdAppMgrIPCClient::onDisconnected: AdAppMgrRequestServer
+TRACE 2023-03-18T16:59:42.957 TID(6052) ================== AdskWixBaInt ended ==================
+TRACE 2023-03-18T16:59:42.958 TID(6052) AdAppMgrIPCServer::closing ADAPPMGRINSTSRV2OUT
+TRACE 2023-03-18T16:59:42.958 TID(6052) AdAppMgrIPCServer::close: delete QLocalSocket instance
+TRACE 2023-03-18T16:59:42.958 TID(6052) AdAppMgrIPCServer::close: delete QLocalServer instance
+TRACE 2023-03-18T16:59:42.958 TID(6052) AdAppMgrIPCServer::closing ADAPPMGRINSTSRV2IN
+TRACE 2023-03-18T16:59:42.959 TID(6052) AdAppMgrIPCServer::close: delete QLocalSocket instance
+TRACE 2023-03-18T16:59:42.959 TID(6052) AdAppMgrIPCServer::close: delete QLocalServer instance

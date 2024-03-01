@@ -1,0 +1,123 @@
+<WebServicesCache>
+    <UserInfo UpdateDate="2023-03-19T15:16:04Z" Server="Production" TokenHash="8612a7bfe9f5bc4dd95473338203bf65" User="ab1876270"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<User xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>BQT2HHT6M2NVYKEX</Id>
+  <UserName>ab1876270</UserName>
+  <Email>ab1876270@gmail.com</Email>
+  <OnSubscription>false</OnSubscription>
+  <Profile>
+    <FirstName>Ahmed</FirstName>
+    <LastName>ibrahim</LastName>
+    <CountryCode>TH</CountryCode>
+    <Language>en</Language>
+    <OptIn>true</OptIn>
+    <LastModified>2023-03-18T15:14:37Z</LastModified>
+    <CollectPersonalDetails xsi:nil="true" />
+    <DateOfBirth />
+  </Profile>
+  <EntitlementList>
+    <Entitlement>
+      <Service>urn:autodesk.com:services:acadws</Service>
+      <Level>User</Level>
+      <Name>Autodesk® AutoCAD® 360</Name>
+      <AccessUrl>https://www.autocadws.com/main/oauth</AccessUrl>
+    </Entitlement>
+    <Entitlement>
+      <Service>urn:autodesk.com:mobile:drapp</Service>
+      <Level>User</Level>
+      <Name>Autodesk® 360 Mobile</Name>
+      <AccessUrl>http://www.autodesk.com/autodesk360mobile</AccessUrl>
+    </Entitlement>
+    <Entitlement>
+      <Service>urn:autodesk.com:services:geoloc3</Service>
+      <Level>User</Level>
+      <Name>Online Map Data</Name>
+    </Entitlement>
+  </EntitlementList>
+  <ExpiredEntitlementList />
+  <EidmGuid>BQT2HHT6M2NVYKEX</EidmGuid>
+  <SocialUserInfoList />
+  <LdapInfo>
+    <LdapEnabled>false</LdapEnabled>
+  </LdapInfo>
+  <ProfileImageUrl>
+    <SizeX20>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x20.jpg?r=0</SizeX20>
+    <SizeX40>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x40.jpg?r=0</SizeX40>
+    <SizeX50>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x50.jpg?r=0</SizeX50>
+    <SizeX58>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x58.jpg?r=0</SizeX58>
+    <SizeX80>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x80.jpg?r=0</SizeX80>
+    <SizeX120>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x120.jpg?r=0</SizeX120>
+    <SizeX160>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x160.jpg?r=0</SizeX160>
+    <SizeX176>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x176.jpg?r=0</SizeX176>
+    <SizeX240>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x240.jpg?r=0</SizeX240>
+    <SizeX360>https://images.profile.autodesk.com/BQT2HHT6M2NVYKEX/profilepictures/x360.jpg?r=0</SizeX360>
+  </ProfileImageUrl>
+  <Contact>
+    <Address1 />
+    <Address2 />
+    <City />
+    <State />
+    <Zipcode />
+    <Country />
+    <Phones />
+    <ProfileEmail />
+  </Contact>
+  <ProfessionalInformation>
+    <Company />
+    <JobTitle />
+    <Industry />
+    <IndustryCode />
+    <AboutMe />
+  </ProfessionalInformation>
+  <EmailVerified>false</EmailVerified>
+  <LastLoginDate>2023-03-18T15:15:38Z</LastLoginDate>
+  <IsVerifiedAdult>false</IsVerifiedAdult>
+  <IsTwoFAEnabled>false</IsTwoFAEnabled>
+  <CreatedDate>2023-03-18T15:14:37Z</CreatedDate>
+</User>]]></UserInfo>
+    <ServiceEntitlementEx UpdateDate="2023-03-19T15:16:04Z" Server="Production" TokenHash="8612a7bfe9f5bc4dd95473338203bf65" User="ab1876270"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<UserEntitlement xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntitlementList>
+    <Entitlement>
+      <Service>urn:autodesk.com:services:acadws</Service>
+      <Name>Autodesk® AutoCAD® 360</Name>
+      <Type>Free</Type>
+      <UserType>User</UserType>
+    </Entitlement>
+    <Entitlement>
+      <Service>urn:autodesk.com:mobile:drapp</Service>
+      <Name>Autodesk® 360 Mobile</Name>
+      <Type>Free</Type>
+      <UserType>User</UserType>
+    </Entitlement>
+    <Entitlement>
+      <Service>urn:autodesk.com:services:geoloc3</Service>
+      <Name>Online Map Data</Name>
+      <Type>Free</Type>
+      <UserType>User</UserType>
+    </Entitlement>
+  </EntitlementList>
+  <EligibleTrialList>
+    <TrialGroup>
+      <Services>
+        <Entitlement>
+          <Service>urn:autodesk.com:services:autodesk360team</Service>
+          <Name>A360 Team</Name>
+        </Entitlement>
+      </Services>
+      <TrialGroupName>autodesk360teamtrial</TrialGroupName>
+    </TrialGroup>
+    <TrialGroup>
+      <Services>
+        <Entitlement>
+          <Service>urn:autodesk.com:services:forge</Service>
+          <Name>Forge</Name>
+        </Entitlement>
+      </Services>
+      <TrialGroupName>forgeteamtrial</TrialGroupName>
+    </TrialGroup>
+  </EligibleTrialList>
+  <ActiveTrialList />
+  <ExpiredTrialList />
+</UserEntitlement>]]></ServiceEntitlementEx>
+</WebServicesCache>

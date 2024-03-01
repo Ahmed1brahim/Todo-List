@@ -1,0 +1,4 @@
+<?xml version='1.0'?>
+<Sync UserWarnedForBlockedVersion="8.2.3.1800" IsSyncPaused="False">
+    <Settings QuotaThresholdReminderIntervalSecs="14400"/>
+</Sync>
